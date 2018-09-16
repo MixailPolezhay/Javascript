@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<script>
+
+var transformator = {
+	number: 0,
+    arrayTarget: [] ,
+    getNumber: function() {
+	    this.number = prompt('Введите число от 0 до 999');
+	    if (this.number > 0 && this.number < 999) {
+            var arrayNumber = this.number.split('');
+            
+            if(arrayNumber.length = 3){
+            	this.arrayTarget['сотни'] = +arrayNumber[0];
+            	this.arrayTarget['десятки'] = +arrayNumber[1];
+            	this.arrayTarget['еденицы'] = +arrayNumber[2];
+            } else if(arrayNumber.length = 2 ){
+            	this.arrayTarget['десятки'] = +arrayNumber[1];
+            	this.arrayTarget['еденицы'] = +arrayNumber[2];
+            } else{
+            	this.arrayTarget['еденицы'] = +arrayNumber[2];
+            }
+		} else {
+			alert('Вы ввели некорректное число или вы ввели не число');
+			this.getNumber();
+		}
+    }
+};
+
+alert(transformator.arrayTarget);
+</script>
