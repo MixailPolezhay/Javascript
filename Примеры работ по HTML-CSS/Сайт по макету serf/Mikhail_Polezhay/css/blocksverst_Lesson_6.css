@@ -1,0 +1,542 @@
+body{
+   /* float: left;*/
+    margin: 0; 
+    display: flex;
+}
+.image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.container{
+    background-color: #f4f5f9;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    background-color: #abeafa;
+    height: 700px;
+    width: 100%;
+}
+.Podheader{
+    margin: 0 auto;
+    background-image: url("../pictures/logo.png");
+    background-repeat: no-repeat;
+    background-size: 125px 111px;
+    background-position: 50px 24px;
+    width: 1170px;
+    height: inherit;
+}
+
+.Podheader .socials{
+    height: 16px;
+    width: 120px;
+    position: absolute;
+    top: 50px;
+    left: 1151px;
+    display: flex;
+    justify-content: space-between;
+}
+.socials i {
+    margin-left: 5px;
+    color: white;
+    font-size: 17px;
+    width: 17px;
+    text-align: center;
+}
+.socials i:hover {
+    color: #333;
+}
+.Podheader>.privet{
+    background-color:  #fff51f;
+    width: 270px;
+    height: 300px; 
+    position: relative;
+    top: 336px;
+}
+.privet p{
+    position: absolute;
+    top: 142px;
+    left: 24px;
+    width: 218px;
+    color:  #333333;
+    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    /**/line-height: 18px;/* Приближение из-за подстановки шрифтов */
+    word-break:break-all;
+}
+.privet h1{
+    position: absolute;
+    top: 58px;
+    left: 27px;
+    color:  #333333;
+    font-size: 30px;/* Приближение из-за подстановки шрифтов */
+    line-height: 30px;/* Приближение из-за подстановки шрифтов */
+}
+.Podheader>.header_info{
+    position: relative;
+    top: -53px;
+    left: 748px;
+    width: 270px;
+    height: 300px;
+}
+.header_info .title{
+    color:  #fff51f;
+    font-size: 48px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 45px;/* Приближение из-за подстановки шрифтов */
+    margin: 0;
+}
+.header_info p{
+    color:  #fff51f;
+    font-size: 21px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+}
+.buynow{
+    width: 124px;
+    height: 49px;
+    background: #fff51f;
+    position:absolute;
+    top: 231px;
+    left: 3px;
+    font-family: Oswald-Bold;
+    font-size: 14px;
+}
+button{
+    border-style: none;
+    cursor: pointer;
+}
+
+/*Спрайты в шапке*/
+.sprite{
+    background-image: url(../pictures/Menu.png);
+    background-repeat: no-repeat;
+    display: block;    
+}
+.ffacebook{
+    height: 16px;
+    width: 60px;
+    background-position: 6px
+}
+.ttwitter{
+    height: 16px;
+    width: 60px;
+    background-position: -22px
+}
+.yyoutube{
+    height: 16px;
+    width: 60px;
+    background-position: -50px
+}
+.ppinterest{
+    height: 16px;
+    width: 60px;
+    background-position: -77px
+}
+.iinstagram{
+    height: 16px;
+    width: 60px;
+    background-position: -104px
+}
+
+/*середина где меню и продукты*/
+.index_article{
+    width: 100%;
+    min-height: 50px;
+    background-color:  #f8f8f8;
+}
+.center{
+    width: 1170px;
+    margin: 0 auto;
+    margin-top: -20px;
+} 
+.telo{
+    min-height: 30px; 
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    width: 270px;
+    min-height: inherit;   
+}
+.content{
+    background-color:  #f8f8f8;
+    width: 870px;
+    min-height: 724px;
+
+}
+/*меню*/
+.menu_inner{
+    background-color: #26d2fc;
+    display: flex;
+    flex-direction: column;
+    font-weight: 900;
+    font-size: 14px;
+}
+.menu_inner div p{
+    margin: 0px;
+}
+.menu_inner a{
+    height: 37px;
+    line-height: 37px;
+    text-decoration: none;
+    color: black;
+    padding-left: 40px;
+}
+.menu_inner a:hover{
+    background-color:  #333333;
+    color: white;
+}
+.menu_inner div{
+    background-color:  #333333;
+    height: 66px;
+    color: white;
+    line-height: 66px;
+    padding-left: 40px;
+    }
+/*штука под меню*/
+.undermenu{
+    position: absolute;
+    width: 270px;
+    height: 300px;
+    background-color: #e0e0e0;
+    margin-top: 30px;
+}
+.undermenu p{
+    position: absolute;
+    font-weight: 800;
+    font-size: 36px;
+    width: 109px;
+    top: 90px;
+    right: 20px;
+    line-height: 36px;
+}
+.undermenu::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255,255,255,.4);
+    
+}
+/*Внутренности где товар*/
+.content{
+    min-height:inherit;
+    display: flex;
+    flex-direction: column;
+}
+.new_porducts{
+    display: flex;
+    flex-direction: column;
+    
+}
+.cell_product{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.products{
+    margin-bottom: 17px;
+}
+.products h2{
+    font-weight: 900;
+    height: 53px;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding-top: 21px;
+    padding-left: 25px;
+    margin: 0px;
+}
+/*продуктовая карточка*/
+.item_product{
+    background-color: white;
+    width: 270px;
+    height: 320px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    font-weight: 900;
+    color: #333;
+}
+.item_product:nth-child(3n){
+    margin-right: 0px;
+}
+.item_product .image {
+    background-color:  #eaeaea;
+    height: 235px;
+    margin: 10px;
+}
+
+.item_product .productName {
+    margin: 15px;
+    font-style: italic;
+    font-size: 14px;
+    width: 140px;
+    max-height: 2.5em;
+    overflow: hidden;
+    left: 27px
+}
+
+.item_product .cost {
+    position: absolute;
+    right: 20px;
+    bottom: 35px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.item_product .oldCost {
+    position: absolute;
+    color:  #e24602;
+    right: 20px;
+    bottom: 18px;
+    font-size: 14px;
+    font-style: italic;
+    text-decoration: line-through;
+}
+.item_product .corner{
+    height: 46px;
+    width: 46px;
+    background-image: url(../pictures/Corner.png);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.item_product .corner::after{
+    content: 'NEW';
+    color: white;
+    position: absolute;
+    right: 4px;
+    top: 9px;
+    font-size: 9px;
+    }
+.item_product .corner1{
+    height: 46px;
+    width: 46px;
+    background-image: url(../pictures/Corner1.png);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.item_product .corner1::after{
+    content: 'HOT';
+    font-size: 9px;
+    position: absolute;
+    right: 4px;
+    top: 9px;
+}
+
+/*3 блок сверху от футера*/
+.index_article1{
+    width: inherit;
+    height: 660px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+}
+.social{
+     height: 660px;
+     width: 1170px;
+     display: flex;
+     flex-direction: column;
+     margin: 0 auto;
+}
+.social>.brand{
+    width: inherit;
+    height: 160px;
+    background-color: white;
+    background-image: url(../pictures/brands.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.social .soc_foto{
+    background: #eaeaea;
+    height: 350px; 
+}
+.social>.soc_foto>.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    margin-top: 30px;
+    font-weight: 900;
+    font-style: italic;
+    color: #333;
+}
+.title span{
+    padding-left: 6px;
+    font-family: Oswald-Bold;
+    font-size: 22px;
+} 
+.title a{
+    display:flex;
+    align-items: center;
+}
+.instagram1{
+   height: 28px;
+   width: 28px;
+   background-image: url(../pictures/insta%20icon.png)
+}
+.social>.soc_foto>.photo {
+    display: flex;
+    justify-content: space-between;
+}
+.social>.soc_foto>.photo .item {
+    width: 185px;
+    height: 185px;
+    box-shadow: 0 0 0 10px white inset; 
+}
+.social .soc_link{
+    display: flex;
+}
+.soc_link>.face{
+    height: 150px;
+    width: 390px;
+    background-color: #3b5997;
+    background-image: url(../pictures/f%20icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.soc_link>.twit{
+    height: 150px;
+    width: 390px;
+    background-color: #3fccfd;
+    background-image: url(../pictures/tw%20icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.soc_link>.pop{
+    height: 150px;
+    width: 390px;
+    background-color: #cb2027;
+    background-image: url(../pictures/pin%20icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*низ*/
+.footer1{   
+    height: 301px;
+    background: #373737;    
+    }
+.footer1>.top_footer{
+    width: 1170px;
+    height: 301px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;  
+}
+.part a{
+    color:white;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.part span{
+    color: white;
+    font-size: 16px;
+    font-family:"Oswald-Light";
+    line-height: 14px;
+}
+.part h1{
+    color:white;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.part .hh{
+    margin-bottom: 0;
+}
+.contactt{
+    padding-top: 8px
+}
+.contactt a{
+    color: #faef03;
+}
+.part .suscribe{
+    margin-top: 20px;
+    height: 30px;
+}
+.suscribe input[type="email"]{
+    background-color: #fff51f;
+    width: 180px;
+    height: inherit;
+    border: none;
+    
+}
+.suscribe button{
+    height: inherit;
+    width: 71px;
+    background-color: black;
+    color: white;
+}
+.suscribe button:hover{
+    border-style: inset;
+}
+/*платежки*/
+.paySys{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+.paySys>.item{
+    width: 36px;
+    height: 22px;
+    background-color: aliceblue;
+}
+.paySys .am{
+    background-image: url(../pictures/aex.png)
+}
+.paySys .maestro{
+    background-image: url(../pictures/maestero.png)
+}
+.paySys .maestro1{
+    background-image: url(../pictures/mastercard.png)
+}
+.paySys .pp{
+    background-image: url(../pictures/paypal.png)
+}
+.paySys .discover{
+    background-image: url(../pictures/discover.png)
+}
+.paySys .visa{
+    background-image: url(../pictures/visa_straight.png)
+}
+/*блоки в футере*/
+.part{
+    max-width: 260px;
+    display: flex;
+    flex-direction: column;  
+    margin-top: 75px;
+}
+/*Нижний футер*/
+.footer2{
+    height: 47px;
+    background: #333333;  
+    }
+.footer2 .botom_footer {
+    width: 1170px;
+    height: 47px;
+    margin: 0 auto; 
+    font-size: 14px;
+    line-height: 47px;
+    color: white; 
+    position: relative;
+}
+.footer2>.botom_footer>.social1 {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    display: flex;
+}
+.social1 i{
+    margin-left: 5px;
+    color: white;
+    font-size: 17px;
+    width: 17px;
+    text-align: center;
+}
